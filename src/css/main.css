@@ -5,3 +5,63 @@ video {
   width: 100%;
   height: auto;
 }
+body {
+  margin: 0;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15);
+  min-height: 2.25rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+}
+
+/* Desktop Only */
+@media (min-width: 40em) {
+  .navbar button {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+html {
+  max-width: 75ch;
+  margin: 0 auto;
+}
+footer {
+  margin-left: auto;
+  color: black;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: noteworthy;
+}
+
+nav {
+  font-family: noteworthy;
+  justify-content: space-between;
+}
+
+body {
+  font-family: DIN Alternate;
+}
